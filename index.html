@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookVerse</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">BookVerse</h1>
+      <p>Filter through a curated collection of timeless books.</p>
+    </div>
+    <div class="input-section">
+      <input
+        type="text"
+        placeholder="Search by title or author...."
+        id="bookFinder"
+      />
+    </div>
+    <div class="sort-section">
+      <label for="sortSelect">
+        <select id="sortSelect">
+          <option value="default">Default</option>
+          <option value="yearAsc">Year ↑ (Old to New)</option>
+          <option value="yearDesc">Year ↓ (New to Old)</option>
+          <option value="titleAsc">Title A → Z</option>
+          <option value="titleDesc">Title Z → A</option>
+        </select>
+      </label>
+    </div>
+    <div class="filter-section">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Fiction</button>
+      <button class="filter-btn">Non-fiction</button>
+      <button class="filter-btn">Mystery</button>
+      <button class="filter-btn">Programming</button>
+    </div>
+    <ul class="books-list"></ul>
+    <p class="no-books">No books found. Try again!</p>
+    <script src="script.js"></script>
+  </body>
+</html>
